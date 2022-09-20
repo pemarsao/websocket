@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: ${APPLICATION_NAME:WebSocket-demo}
+
+
+# Actuator
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+
+cloud:
+  aws:
+    instance:
+      data:
+        enabled: false
+    sqs:
+      endpoint: ${CLOUD_AWS_ENDPOINT:http://localhost:4566}
+      region.static: us-east-1
+      enable: true
+
+app:
+  sqs:
+    queue-name: test-websocket
