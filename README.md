@@ -3,13 +3,13 @@
 
 ### Objetivo
 
-O objetivo de projeto e mostrar com o backend pode enviar informações diretamente para o frontend através de websocket.
+O objetivo de projeto e mostrar como o backend pode enviar informações diretamente para o frontend através de websocket.
 Com esse projeto uma informação é enviada para uma fila SQS, processada pelo backend e enviada diretamente para o frontend, sem que o frontend precise fazer uma requisição http para o backend.
 
 ### Informações do projeto
 
 - Para o backend foi utilizado kotlin com JVM 17, Spring boot 2.7.3 e Spring cloud 2.3.0
-- No frontend foi utlizando angular na versão 14.0.2 e primNG.
+- No frontend foi utlizando angular na versão 14.0.2 e primeNG.
 - Para simular uma fila SQS foi utilizado localstack.
 
 ### Configurando localstack
